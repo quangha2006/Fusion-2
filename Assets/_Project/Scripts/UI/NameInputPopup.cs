@@ -12,7 +12,7 @@ public class NameInputPopup : MonoBehaviour
     [SerializeField] private List<ColorButton> colorList;
     
     private Action<string, Color> onSubmit;
-    private Color colorSelected;
+    private Color colorSelected = Color.red;
     private void Start()
     {
         foreach (var button in colorList)
